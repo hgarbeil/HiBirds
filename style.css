@@ -6,11 +6,16 @@
     --color-gray-dark: #56555e ;
     --color-dark : #27282f ;
     --color-primary: rgb(71,7,234);
+    --color-bgprimary : rgb (7,121,134);
+
     --color-success: rgb(34,202,75) ;
     --color-danger : rgb(255, 67,54) ;
     --color-warning: rgb(234,181,7) ;
     --color-purple: rgb(160,99,245) ;
+    --color-blgreen: rgb(99,160,245);
+    --color-blgreen-light: rgba(99,160,244,.2) ;
     --color-primary-light : rgba( 71,7,234,.2) ;
+    --color-bgprimary-light : rgba( 7,221,234,.1) ;
     --color-success-light : rgba( 34,202,75,.2) ;
     --color-danger-light : rgba(255,67,54,.2) ;
     --color-purple-light : rgba(160,99,244,.2) ;
@@ -44,7 +49,7 @@ html {
 
 
 body {
-    background-color: var(--color-primary-light) ;
+    background-color: var(--color-bgprimary-light) ;
     display: flex ;
     flex-direction: column;
     margin:0 ;
@@ -61,6 +66,7 @@ body {
     font-size: 2rem ;
     border-radius: var(--border-radius-1);
     padding: var(--padding-2);
+    box-shadow : 6px 6px 5px lightgray;
 }
 
 
@@ -90,7 +96,7 @@ nav .topnav-list {
 
 li {
 
-    background-color: var(--color-purple-light);
+    background-color: var(--color-blgreen-light);
     padding : var(--padding-2);
     border-radius: var(--border-radius-1) ;
     border : 1px solid #555 ;
@@ -99,7 +105,7 @@ li {
 
 li:hover {
     background-color: var(--color-gray-light);
-    transition: width 2s ease-in-out; */
+    transition: width 2s ease-in-out;
 }
 
 li.active {
@@ -113,13 +119,13 @@ li.active {
     gap: .2rem ;
     justify-items: center ;
     padding : var(--padding-1);
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-bgprimary-light);
     
 
 }
 
 .main-card {
-    background-color: var(--color-primary-light) ;
+    background-color: var(--color-blgreen) ;
     font-size: 1.4rem ;
     width: 28rem ;
     display: flex ;
@@ -140,6 +146,42 @@ li.active {
     height:100% ;
     width: 100% ;
     
+}
+
+.main-tile-container {
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    gap: 5px ;
+}
+
+.main-tile-head{
+    font-size: 1.4rem ;
+    text-align: center ;
+    padding: var(--padding-1);
+}
+
+.main-tile {
+    background-color : var(--color-blgreen) ;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    height:18rem ;
+    
+    display: flex ;
+    flex: 0 0 32rem ;
+    justify-content: space-evenly ;
+    align-items: center ;
+}
+
+
+.main-tile > div {
+
+    flex: 1 1 50% ;
+}
+
+.main-tile-img img {
+    width: 100% ;
+
 }
 
 @media screen and (min-width:700px) and (max-width:1060px){
