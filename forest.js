@@ -1,11 +1,19 @@
 
 const main_container = document.querySelector(".topmain") ;
+const forestLink = document.getElementById("Forestlink") ;
 const infile = 'data/forest.txt' ;
 var arrlist=[] ;
 
 
-function forestbirds () {
 
+
+function forestbirds () {
+    for (ilink of linkarr){
+        let link = document.getElementById(ilink);
+        link.classList.remove ("active") ; 
+        
+    }
+    forestLink.classList.add("active") ;
     console.log("we are in here");
     main_container.innerHTML = "What did we do?" ;
     let myhtml ="<div class='main-tile-head'><h2>Forest Birds</h2></div><div class='main-tile-container'>" ;
