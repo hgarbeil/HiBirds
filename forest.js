@@ -1,13 +1,13 @@
 
 const main_container = document.querySelector(".topmain") ;
 const forestLink = document.getElementById("Forestlink") ;
-let infile = 'data/forest.txt' ;
 var arrlist=[] ;
 
 
 
 
 function forestbirds () {
+    let infile='data/forest.txt';
     for (ilink of linkarr){
         let link = document.getElementById(ilink);
         link.classList.remove ("active") ; 
