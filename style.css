@@ -148,6 +148,7 @@ li.active {
 
 .main-card div {
     flex: 1 1 0 ;
+    height:240px ;
 }
 
 .main-card img{
