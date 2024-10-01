@@ -1,7 +1,7 @@
 
 const main_container = document.querySelector(".topmain") ;
 const forestLink = document.getElementById("Forestlink") ;
-const infile = 'data/forest.txt' ;
+let infile = 'data/forest.txt' ;
 var arrlist=[] ;
 
 

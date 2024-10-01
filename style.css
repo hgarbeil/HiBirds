@@ -89,6 +89,8 @@ nav .topnav-list {
     display: flex ;
     flex-wrap : wrap ;
     justify-content: space-evenly ;
+    background-color: beige;
+    border-radius: 5px ;
     gap : 0.2rem ;
     flex : 1 0  ;
     
@@ -99,7 +101,7 @@ li {
     background-color: var(--color-blgreen-light);
     padding : var(--padding-2);
     border-radius: var(--border-radius-1) ;
-    border : 1px solid #555 ;
+    /* border : 1px solid #555 ; */
 
 }
 
@@ -113,6 +115,9 @@ li.active {
     background-color: var(--color-success);
 }
 
+.topmain {
+    background-color: beige ;
+}
 .main {
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr ; 
