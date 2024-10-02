@@ -8,6 +8,7 @@ var arrlist=[] ;
 
 function forestbirds () {
     let infile='data/forest.txt';
+    arrlist=[] ;
     for (ilink of linkarr){
         let link = document.getElementById(ilink);
         link.classList.remove ("active") ; 
@@ -23,6 +24,7 @@ function forestbirds () {
             str = iline.split(';') ;
             
             let bird={name:str[0],  commonName:str[1], scientific_name:str[2], image:str[6]} ;
+            arrlist.push(bird);
             console.log(bird.scientific_name) ;
             myhtml = myhtml + makeCard(bird);
         }
@@ -41,8 +43,18 @@ function makeCard (birdObj){
     str = str+""+birdObj.name+"</h2>" ;
     str = str+"<h4>CommonName : "+birdObj.commonName+"</h4></div>" ;
     str = str+"<div class='main-tile-col' ><div><img class='main-tile-img' src="+birdObj.image+" ></div>" ;
-    str = str+"<div class='detailbutton'>Details</div></div></div>";
+    str = str+`<div class='detailbutton' onclick=makeFocus(${birdObj.indval})>Details</div></div></div>`;
     return str ;
+
+
+}
+
+function makeFocus (indval){
+    let myhtml = '<div class="main-focus-head">' ;
+    myhtml = myhtml + '<div class="main-focus-imgdiv">' ;
+    myhtml = myhtml + `<h2>${arrlist[indval].name}</h2></div></div>` ;
+    main_container.innerHTML = myhtml ;
+        
 
 
 }
