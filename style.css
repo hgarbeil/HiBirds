@@ -210,11 +210,23 @@ li.active {
 
 }
 
+.main-focus-head{
+    font-size: 1.3rem ;
+}
+
 .detailbutton {
     background-color: tan ;
     text-align: center ;
     border-radius: var(--border-radius-1);
     width: 80% ;
+
+}
+
+li.detail-li {
+    background-color: lightgray;
+    padding : 0;
+    border-radius: 0 ;
+
 
 }
 @media screen and (min-width:700px) and (max-width:1060px){

@@ -25,7 +25,8 @@ function forestbirds () {
         for (iline of lines) {
             str = iline.split(';') ;
             
-            var  bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], image:str[6]} ;
+            var  bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
+                endemic: str[3], habitat: str[5], image:str[6]} ;
            
             myhtml = myhtml + makeCard(bird);
             arrlist.push(bird) ;
@@ -50,16 +51,29 @@ function makeCard (birdObj){
     str = str+""+birdObj.name+"</h2>" ;
     str = str+"<h4>CommonName : "+birdObj.commonName+"</h4></div>" ;
     str = str+"<div class='main-tile-col' ><div><img class='main-tile-img' src="+birdObj.image+" ></div>" ;
-    str = str+`<div class='detailbutton' onclick=focusbird(${newfcn}) >Details</div></div></div>`;
+    str = str+`<div class='detailbutton' onclick=makeFocus(${newfcn}) >Details</div></div></div>`
+    
     return str ;
 
 
 }
 
 function makeFocus (indval){
+    let mybird = arrlist[indval] ;
     let myhtml = '<div class="main-focus-head">' ;
     myhtml = myhtml + '<div class="main-focus-imgdiv">' ;
-    myhtml = myhtml + `<h2>${arrlist[indval].name}</h2></div></div>` ;
+    myhtml = myhtml + `<h2>${mybird.name}</h2>` ;
+    myhtml = myhtml + `Common Name :  ${mybird.commonName}` ;
+    myhtml = myhtml + "<ul class='detail-list'>" ;
+    myhtml = myhtml + `<li class="detail-li">Scientific Name : ${mybird.scientific_name}</li>` ;
+    myhtml = myhtml + `<li class="detail-li">Type : ${mybird.endemic}</li>` ;
+    myhtml = myhtml + `<li class="detail-li">Occurrence : ${mybird.habitat}</li>` ;
+    myhtml = myhtml + "</ul>" ;
+
+    
+    
+    myhtml = myhtml + "</div></div>" ;
+    console.log (myhtml) ;
     main_container.innerHTML = myhtml ;
         
 
