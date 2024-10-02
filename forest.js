@@ -36,11 +36,12 @@ function forestbirds () {
 
 function makeCard (birdObj){
     console.log(birdObj.image) ;
-    var str = "<div class='main-tile'><div>" ;
-    str = str+"<h2 class='main-tile-name'>" ;
+    var str = "<div class='main-tile'>" ;
+    str = str+"<div class='main-tile-col'><h2 class='main-tile-name'>" ;
     str = str+""+birdObj.name+"</h2>" ;
     str = str+"<h4>CommonName : "+birdObj.commonName+"</h4></div>" ;
-    str = str+"<div class='main-tile-img' ><img src="+birdObj.image+" ></div></div>" ;
+    str = str+"<div class='main-tile-col' ><div><img class='main-tile-img' src="+birdObj.image+" ></div>" ;
+    str = str+"<div class='detailbutton'>Details</div></div></div>";
     return str ;
 
 

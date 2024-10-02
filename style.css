@@ -191,18 +191,32 @@ li.active {
 }
 
 
-.main-tile > div {
+.main-tile-col {
 
-    flex: 1 1 50% ;
+    display:flex ;
+    flex-direction: column;
+    align-items: center ;
+    flex: 1 1 16rem ;
+    
     
     
 }
 
-.main-tile-img img {
-    width: 100% ;
+.main-tile-img {
+
+    height:12rem ;
+    width: 12rem ;
+
 
 }
 
+.detailbutton {
+    background-color: tan ;
+    text-align: center ;
+    border-radius: var(--border-radius-1);
+    width: 80% ;
+
+}
 @media screen and (min-width:700px) and (max-width:1060px){
     .main {
         grid-template-columns: 1fr 1fr ; 
