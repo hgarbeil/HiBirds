@@ -92,7 +92,7 @@ nav .topnav-list {
     display: flex ;
     flex-wrap : wrap ;
     justify-content: space-evenly ;
-    background-color: beige;
+    /* background-color: beige; */
     border-radius: 5px ;
     gap : 0.2rem ;
     flex : 1 0  ;
@@ -162,6 +162,7 @@ li.active {
 
 .main-tile-container {
     display: flex ;
+    background-color: var(--color-bgprimary-light) ;
     flex-wrap: wrap ;
     justify-content: space-evenly;
     gap: 5px ;
@@ -170,6 +171,7 @@ li.active {
 
 .main-tile-head{
     font-size: 1.4rem ;
+    background-color: var(--color-bgprimary-light) ;
     text-align: center ;
     padding: var(--padding-1);
     font-style: italic;
