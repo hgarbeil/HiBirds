@@ -75,15 +75,38 @@ function makeFocus (indval){
     myhtml = myhtml + `<li class="detail-li">Occurrence : ${mybird.habitat}</li>` ;
     myhtml = myhtml + "</ul></div>" ;
     myhtml = myhtml + `<div class="main-focus-right"><div class="main-focus-tnails">
-        <img src=${mybird.image}><img src=${mybird.image1}><img src=${mybird.image2}></div>
-        <div class="main-focus-big"><img src=${mybird.image} alt="mybird"><div></div>` ;
+        <img src=${mybird.image} onclick="loadFull(0, ${indval})"><img src=${mybird.image1} onclick="loadFull(1,${indval})"><img src=${mybird.image2} onclick="loadFull(2, ${indval})"></div>
+        <div class="main-focus-big" ><img src=${mybird.image} alt="mybird" id="bigBird"><div></div>` ;
 
     
     
     myhtml = myhtml + "</div>" ;
-    console.log (myhtml) ;
     main_container.innerHTML = myhtml ;
         
 
 
+}
+
+function loadFull (imNum, indval) {
+    
+    let loadimage ;
+    let birdObj = arrlist[indval] ;
+    switch (imNum){
+        case 0 : 
+            loadimage = birdObj.image ;
+            break ;
+        case 1 :
+            loadimage = birdObj.image1 ;
+            break ;
+        case 2 :
+            loadimage = birdObj.image2 ;
+            break ;
+    }
+
+    
+    let myimg = document.getElementById("bigBird") ;
+    myimg.src = loadimage ;
+    console.log(myimg);
+            
+    
 }

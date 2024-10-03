@@ -3,4 +3,4 @@ Java Sparrow; Java finch; Lonchura oryzivora; Introduced; Backyard; Grasslands, 
 Zebra Dove; Zebra Dove; Geopelia striata; Introduced; Backyard; Extremely common, parks, restaurants, backyards, scrubland, sometimes forests; images/zebra_dove.jpg
 Spotted Dove; Spotted Dove; Spilopelia chinensis; Introduced; Backyard;  Extremely common, parks, restaurants, backyards, scrubland, sometimes forests; images/spotted_dove.jpg
 Red-Whiskered Bulbul; Bulbul; Pycnonotus jocosus; Introduced; Backyard; Oahu only, extremely common in cultivated areas, gardens, parks, urban; images/bulbul.jpg
-Common Myna; Myna; Acridotheres tristis; Introduced; Backyard; Noisy, common, near humans in neighborhoods, parks, gardens;images/myna.jpg
+Common Myna; Myna; Acridotheres tristis; Introduced; Backyard; Noisy, common, near humans in neighborhoods, parks, gardens;images/myna.jpg;images/myna_2.jpg;images/myna_3.jpg
