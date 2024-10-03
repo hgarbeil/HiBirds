@@ -21,7 +21,7 @@ function backyardbirds() {
 
             str = iline.split(';') ;
             var  bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
-                endemic: str[3], habitat: str[5], image:str[6]} ;
+                endemic: str[3], habitat: str[5], image:str[6], image1:str[7], image2:str[8]} ;
             console.log(bird.scientific_name) ;
             arrlist.push (bird) ;
             myhtml = myhtml + makeCard(bird);
