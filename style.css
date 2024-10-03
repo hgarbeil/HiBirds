@@ -212,6 +212,45 @@ li.active {
 
 .main-focus-head{
     font-size: 1.3rem ;
+    text-align: center;
+}
+
+.main-focus-top {
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    align-content: center ;
+}
+
+.main-focus-left {
+    flex: 1 0 40% ;
+    background-color: lightgray;
+    padding: var(--card-padding) ;
+    border-radius : var(--border-radius-2);
+    font-size : 1.4rem ;
+}
+.main-focus-right {
+    flex: 1 0 55% ;
+    align-items: right ;
+    display:flex ;
+    justify-content: space-evenly;
+    padding: var(--padding-1) ;
+
+}
+
+.main-focus-tnails {
+    display: flex ;
+    flex-direction: column ;
+    gap: 5px ;
+}
+.main-focus-tnails img {
+
+    height: 90px ;
+}
+
+
+.main-focus-big img {
+    height: 400px ;
 }
 
 .detailbutton {
@@ -223,9 +262,10 @@ li.active {
 }
 
 li.detail-li {
-    background-color: lightgray;
+    width: 100% ;
     padding : 0;
     border-radius: 0 ;
+    margin-bottom: .3rem ;
 
 
 }

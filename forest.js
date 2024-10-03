@@ -24,9 +24,14 @@ function forestbirds () {
         let inum = 0 ;
         for (iline of lines) {
             str = iline.split(';') ;
-            
-            var  bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
-                endemic: str[3], habitat: str[5], image:str[6]} ;
+            console.log(str.length) ;
+            if (str.length > 7){
+                bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
+                endemic: str[3], habitat: str[5], image:str[6], image1:str[7], image2:str[8]} ;
+            }
+            else 
+                bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
+                    endemic: str[3], habitat: str[5], image:str[6]} ;
            
             myhtml = myhtml + makeCard(bird);
             arrlist.push(bird) ;
@@ -60,19 +65,22 @@ function makeCard (birdObj){
 
 function makeFocus (indval){
     let mybird = arrlist[indval] ;
-    let myhtml = '<div class="main-focus-head">' ;
-    myhtml = myhtml + '<div class="main-focus-imgdiv">' ;
-    myhtml = myhtml + `<h2>${mybird.name}</h2>` ;
+    let myhtml = `<div class="main-focus-head"><h2>${mybird.name}</h2></div>` ;
+    myhtml = myhtml + '<div class="main-focus-top">' ;
+    myhtml = myhtml + '<div class="main-focus-left" >' ;
     myhtml = myhtml + `Common Name :  ${mybird.commonName}` ;
     myhtml = myhtml + "<ul class='detail-list'>" ;
     myhtml = myhtml + `<li class="detail-li">Scientific Name : ${mybird.scientific_name}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Type : ${mybird.endemic}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Occurrence : ${mybird.habitat}</li>` ;
-    myhtml = myhtml + "</ul>" ;
+    myhtml = myhtml + "</ul></div>" ;
+    myhtml = myhtml + `<div class="main-focus-right"><div class="main-focus-tnails">
+        <img src=${mybird.image}><img src=${mybird.image1}><img src=${mybird.image2}></div>
+        <div class="main-focus-big"><img src=${mybird.image} alt="mybird"><div></div>` ;
 
     
     
-    myhtml = myhtml + "</div></div>" ;
+    myhtml = myhtml + "</div>" ;
     console.log (myhtml) ;
     main_container.innerHTML = myhtml ;
         

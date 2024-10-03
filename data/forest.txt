@@ -1,6 +1,6 @@
 Hawai`i` `Elepaio; Elepaio; Chasiempis sandwichensis; Endemic; Forest; mesic and wet higher elevation forests;images/elepaio.jpg
 Hawai'i' 'Amakihi; Amakihi; Chlorodrepanis viren; Endemic; Forest; Dry, mesic, wet forests ; images/amakihi.jpg
 `Apapane; `Apapane; Himatione sanguinea; Endemic; Forest; Higher elevation forests above 300m; images/apapane.jpg
-White Rumped Shama; Shama thrush; Copsychus malabaricus; Introduced ; Forest; Non-native forests of Oahu and Kauai, also backyard; images/white_rumped_shama.jpg
+White Rumped Shama; Shama thrush; Copsychus malabaricus; Introduced ; Forest; Non-native forests of Oahu and Kauai, also backyard; images/white_rumped_shama.jpg;images/white_rumped_shama_2.jpg; white_rumped_shama_3.jpg
 Pueo; Pueo; Asio flammeus sandwichensis; Endemic; Forest; Forests and grasslands; images/pueo_2.jpg
 `Alala; Hawaiian Crow; Corvus hawaiiensis; Endemic; Forest; presumed endangered possibly extinct in the wild;images/alala.jpg
