@@ -1,12 +1,17 @@
 
 :root {
+
+    --color-mint : #a9bda1 ;
+    --color-terracotta : #eec7a3 ;
+
+
     --color-white : #fff ;
     --color-light: #f0eff5 ;
     --color-gray-light: #a6a4ac ;
     --color-gray-dark: #56555e ;
     --color-dark : #27282f ;
     --color-primary: rgb(71,7,234);
-    --color-bgprimary : rgb (7,121,134);
+    --color-bgprimary : rgb(7,121,134) ;
 
     --color-success: rgb(34,202,75) ;
     --color-danger : rgb(255, 67,54) ;
@@ -38,6 +43,7 @@
     outline: 0 ;
     border: 0 ;
     appearance: none;
+    color: black ;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -60,7 +66,7 @@ body {
 
 
 .titleblock {
-    background-color: var(--color-bgprimary-light);
+    background-color: var(--color-mint);
     /* background-image: url("images/pascal-debrunner.jpg") ;
     background-size: contain ;
     background-repeat: no-repeat ; */
@@ -76,6 +82,10 @@ body {
 .titleblock .hamburger {
     display: none ; 
 
+}
+
+.titleblock * {
+    color: var(--color-bgprimary-dark) ;
 }
 /* 
 .titleblock .title {
@@ -110,7 +120,7 @@ li {
 
 li:hover {
     /* background-color: var(--color-gray-light); */
-    background-color: yellow ;
+    background-color: tan ;
     transition: background-color .5s ease-in-out;
 }
 
@@ -254,7 +264,8 @@ li.active {
 }
 
 .detailbutton {
-    background-color: tan ;
+    background-color: var(--color-bgprimary) ;
+    color: white ;
     text-align: center ;
     border-radius: var(--border-radius-1);
     width: 80% ;
