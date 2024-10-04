@@ -1,8 +1,12 @@
 
 :root {
 
-    --color-mint : #a9bda1 ;
-    --color-terracotta : #eec7a3 ;
+    --color-wintergreen : #49785f ;
+    --color-wintergreen-light: rgba(90,180,200,0.9);
+    --color-seafoam: #b4daa7 ;
+    --color-twinflame : #c2552e ;
+    --color-umber : #352c24 ;
+    --color-pistachio : #f5f4c3 ;
 
 
     --color-white : #fff ;
@@ -43,7 +47,7 @@
     outline: 0 ;
     border: 0 ;
     appearance: none;
-    color: black ;
+    color: var(--color-umber) ;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -66,7 +70,7 @@ body {
 
 
 .titleblock {
-    background-color: var(--color-mint);
+    background-color: var(--color-wintergreen);
     /* background-image: url("images/pascal-debrunner.jpg") ;
     background-size: contain ;
     background-repeat: no-repeat ; */
@@ -75,7 +79,8 @@ body {
     align-items: center;
     font-size: 2rem ;
     padding: var(--padding-2);
-    box-shadow : 6px 6px 5px slategray;
+    box-shadow : 5px 5px 12px slategray ;
+    margin-bottom:5px ;
 }
 
 
@@ -111,7 +116,7 @@ nav .topnav-list {
 
 li {
 
-    background-color: var(--color-blgreen-light);
+    background-color: var(--color-pistachio);
     padding : var(--padding-2);
     border-radius: var(--border-radius-2) ; 
     /* border : 1px solid #555 ; */
@@ -120,12 +125,12 @@ li {
 
 li:hover {
     /* background-color: var(--color-gray-light); */
-    background-color: tan ;
+    background-color: var(--color-seafoam) ;
     transition: background-color .5s ease-in-out;
 }
 
 li.active {
-    background-color: var(--color-success);
+    background-color: var(--color-wintergreen-light);
 }
 
 .topmain {
@@ -139,13 +144,13 @@ li.active {
     row-gap: 1.2rem ;
     justify-items: center ;
     padding : var(--padding-1);
-    background-color: var(--color-bgprimary-light);
+    background-color: var(--color-seafoam);
     
 
 }
 
 .main-card {
-    background-color: var(--color-blgreen-light) ;
+    background-color: var(--color-wintergreen-light) ;
     box-shadow : 6px 6px 5px slategray;
     font-size: 1.4rem ;
     width: 28rem ;
@@ -172,23 +177,24 @@ li.active {
 
 .main-tile-container {
     display: flex ;
-    background-color: var(--color-bgprimary-light) ;
+    background-color: var(--color-seafoam) ;
     flex-wrap: wrap ;
     justify-content: space-evenly;
     gap: 5px ;
     row-gap: 1rem ;
+    padding: var(--padding-1);
 }
 
 .main-tile-head{
     font-size: 1.4rem ;
-    background-color: var(--color-bgprimary-light) ;
+    background-color: var(--color-seafoam) ;
     text-align: center ;
     padding: var(--padding-1);
     font-style: italic;
 }
 
 .main-tile {
-    background-color : var(--color-blgreen-light) ;
+    background-color : var(--color-wintergreen-light) ;
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow : 6px 6px 5px slategray;
@@ -220,7 +226,12 @@ li.active {
 
 }
 
+.main-focus-top div {
+    background-color: var(--color-seafoam);
+}
+
 .main-focus-head{
+    background-color: var(--color-seafoam);
     font-size: 1.3rem ;
     text-align: center;
 }
@@ -234,11 +245,13 @@ li.active {
 
 .main-focus-left {
     flex: 1 0 40% ;
-    background-color: lightgray;
+    background-color: var(--color-pistachio);
     padding: var(--card-padding) ;
     border-radius : var(--border-radius-2);
     font-size : 1.4rem ;
 }
+
+
 .main-focus-right {
     flex: 1 0 55% ;
     align-items: right ;
@@ -264,8 +277,8 @@ li.active {
 }
 
 .detailbutton {
-    background-color: var(--color-bgprimary) ;
-    color: white ;
+    background-color: var(--color-pistachio) ;
+    /* color: var(--c) ; */
     text-align: center ;
     border-radius: var(--border-radius-1);
     width: 80% ;
@@ -273,10 +286,10 @@ li.active {
 }
 
 li.detail-li {
+    
     width: 100% ;
-    padding : 0;
-    border-radius: 0 ;
-    margin-bottom: .3rem ;
+    padding : 5px;
+    border-radius: 1px ;
 
 
 }
