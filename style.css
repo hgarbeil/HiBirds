@@ -86,6 +86,8 @@ body {
 
 .titleblock .hamburger {
     display: none ; 
+    color: var(--color-pistachio) ;
+    font-size:2.5rem ;
 
 }
 
@@ -102,13 +104,18 @@ body {
 } */
 
 nav {
-    font-size: 1.6rem ;
+    font-size: 1.2rem ;
+}
+
+.topnav {
+    margin-top: 4.2rem ;
 }
 
 nav .topnav-list {
     display: flex ;
     flex-wrap : wrap ;
-    justify-content: space-evenly ;
+
+    justify-content: flex-end ;
     /* background-color: beige; */
     border-radius: 5px ;
     gap : 0.2rem ;
@@ -283,9 +290,16 @@ li.active {
 .detailbutton {
     background-color: var(--color-pistachio) ;
     /* color: var(--c) ; */
+    font-size: 1.2rem ;
     text-align: center ;
     border-radius: var(--border-radius-1);
     width: 80% ;
+
+}
+
+.detailbutton:hover {
+    background-color: var(--color-seafoam) ;
+    transition: background-color .2s ease-in-out;
 
 }
 .detail-list {
@@ -304,6 +318,10 @@ li.detail-li {
 @media screen and (min-width:700px) and (max-width:1060px){
     .main {
         grid-template-columns: 1fr 1fr ; 
+    }
+
+    .topnav {
+        margin-top: 0rem ;
     }
 
     nav .topnav-list {
@@ -337,6 +355,17 @@ li.detail-li {
         display: none ;
         
         
+    }
+
+    .main-focus-right {
+        flex-direction: column ;
+        align-items: center ;
+        gap: 3px ;
+    }
+    .main-focus-tnails {
+        display: flex ;
+        flex-direction: row ;
+        gap: 5px ;
     }
 }
 
