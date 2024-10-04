@@ -250,7 +250,7 @@ li.active {
     padding: var(--card-padding) ;
     border-radius : var(--border-radius-2);
     font-size : 1.4rem ;
-    background-color: var(--color-wintergreen-light);
+    background-color: var(--color-pistachio);
 }
 
 
@@ -264,12 +264,6 @@ li.active {
     
 
 }
- .main-focus-right > div {
-    
-    
-    
-
- }
 
 .main-focus-tnails {
     display: flex ;
@@ -293,6 +287,10 @@ li.active {
     border-radius: var(--border-radius-1);
     width: 80% ;
 
+}
+.detail-list {
+
+    padding: var(--padding-1) ;
 }
 
 li.detail-li {

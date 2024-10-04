@@ -47,11 +47,12 @@ function makeFocus (indval){
     let myhtml = `<div class="main-focus-head"><h2>${mybird.name}</h2></div>` ;
     myhtml = myhtml + '<div class="main-focus-top">' ;
     myhtml = myhtml + '<div class="main-focus-left" >' ;
-    myhtml = myhtml + `Common Name :  ${mybird.commonName}` ;
     myhtml = myhtml + "<ul class='detail-list'>" ;
+    myhtml = myhtml + `<li class="detail-li">Alternate Name : ${mybird.commonName}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Scientific Name : ${mybird.scientific_name}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Type : ${mybird.endemic}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Occurrence : ${mybird.habitat}</li>` ;
+    myhtml = myhtml + `<li class="detail-li">Status : ${mybird.concern}</li>`;
     myhtml = myhtml + "</ul></div>" ;
     myhtml = myhtml + `<div class="main-focus-right"><div class="main-focus-tnails">
         <img src=${mybird.image} onclick="loadFull(0, ${indval})"><img src=${mybird.image1} onclick="loadFull(1,${indval})"><img src=${mybird.image2} onclick="loadFull(2, ${indval})"></div>
