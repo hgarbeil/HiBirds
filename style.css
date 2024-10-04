@@ -89,9 +89,11 @@ body {
 
 }
 
-.titleblock * {
-    color: var(--color-bgprimary-dark) ;
+.title-head {
+    color: var(--color-pistachio) ;
 }
+
+
 /* 
 .titleblock .title {
     display: flex ;
@@ -226,9 +228,6 @@ li.active {
 
 }
 
-.main-focus-top div {
-    background-color: var(--color-seafoam);
-}
 
 .main-focus-head{
     background-color: var(--color-seafoam);
@@ -239,27 +238,38 @@ li.active {
 .main-focus-top {
     display: flex ;
     flex-wrap: wrap ;
-    justify-content: space-between ;
+    justify-content: space-evenly ;
+    gap: 10px ;
     align-content: center ;
+    background-color: var(--color-seafoam);
 }
 
 .main-focus-left {
     flex: 1 0 40% ;
-    background-color: var(--color-pistachio);
+    
     padding: var(--card-padding) ;
     border-radius : var(--border-radius-2);
     font-size : 1.4rem ;
+    background-color: var(--color-wintergreen-light);
 }
 
 
-.main-focus-right {
+.main-focus-right  {
     flex: 1 0 55% ;
     align-items: right ;
     display:flex ;
     justify-content: space-evenly;
     padding: var(--padding-1) ;
+    background-color: var(--color-wintergreen-light);
+    
 
 }
+ .main-focus-right > div {
+    
+    
+    
+
+ }
 
 .main-focus-tnails {
     display: flex ;
