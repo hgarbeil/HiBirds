@@ -12,7 +12,6 @@ function backyardbirds() {
             
     }
     backLink.classList.add("active") ;
-    main_container.innerHTML = "What did we do?" ;
     let myhtml ="<div class='main-tile-head'><h2>Backyard Birds</h2></div><div class='main-tile-container'>" ;
     $ajaxUtils.sendGetRequest (infile, function(responseText){
         lines = responseText.split('\n') ;
@@ -20,7 +19,7 @@ function backyardbirds() {
         for (iline of lines) {
 
             str = iline.split(';') ;
-            var  bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
+            var  bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], description:str[10],
                 endemic: str[3], habitat: str[5], concern: str[9], image:str[6], image1:str[7], image2:str[8]} ;
             console.log(bird.scientific_name) ;
             arrlist.push (bird) ;

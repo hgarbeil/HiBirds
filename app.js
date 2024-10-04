@@ -48,8 +48,9 @@ function makeFocus (indval){
     myhtml = myhtml + '<div class="main-focus-top">' ;
     myhtml = myhtml + '<div class="main-focus-left" >' ;
     myhtml = myhtml + "<ul class='detail-list'>" ;
-    myhtml = myhtml + `<li class="detail-li">Alternate Name : ${mybird.commonName}</li>` ;
-    myhtml = myhtml + `<li class="detail-li">Scientific Name : ${mybird.scientific_name}</li>` ;
+    myhtml = myhtml + `<li class="detail-li">Alternate Name : <b>${mybird.commonName}</b></li>` ;
+    myhtml = myhtml + `<li class="detail-li">Scientific Name : <em>${mybird.scientific_name}</em></li>` ;
+    myhtml = myhtml + `<li class="detail-li">Description : ${mybird.description}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Type : ${mybird.endemic}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Occurrence : ${mybird.habitat}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Status : ${mybird.concern}</li>`;
