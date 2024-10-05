@@ -29,7 +29,7 @@
                 <li id="Backlink" onclick="backyardbirds()">Backyard</li>
                 <li id="Forestlink" onclick="forestbirds()">Forest</li>
                 <li id="PondLink" onclick="pondbirds()">Ponds and Lakes</li>
-                <li>Seabirds</li>
+                <li id="SeabirdLink" onclick="seabirds()">Seabirds</li>
             </ul>
         </nav>
         
@@ -61,7 +61,7 @@
             <p>These are birds that will be found in wetlands, ponds and lakes.</p>
             </div>
         </div>
-        <div class="main-card">
+        <div class="main-card" onclick="seabirds()">
             <div><h2>Seabirds</h2></div>
             <div class="img-container">
             <img src="images/redtail_tropicbird.jpeg" alt="Seabird img" ></div>
@@ -94,5 +94,6 @@
     <script src="forest.js"></script>
     <script src="backyard.js"></script>
     <script src="ponds.js"></script>
+    <script src="seabirds.js"></script>
 </body>
 </html>
