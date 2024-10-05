@@ -1,4 +1,4 @@
-const linkarr =["Homelink", "Backlink", "Forestlink"];
+const linkarr =["Homelink", "Backlink", "Forestlink", "PondLink"];
 let arrlist = [] ;
 
 // This loads the image on the bird focus page 
