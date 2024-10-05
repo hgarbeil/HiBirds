@@ -28,7 +28,7 @@
                 </li>
                 <li id="Backlink" onclick="backyardbirds()">Backyard</li>
                 <li id="Forestlink" onclick="forestbirds()">Forest</li>
-                <li>Ponds and Lakes</li>
+                <li id="PondLink" onclick="pondbirds()">Ponds and Lakes</li>
                 <li>Seabirds</li>
             </ul>
         </nav>
@@ -53,7 +53,7 @@
             <p>These are birds that will be found in forests. Note that forests vary in environments, as always.</p>
             </div>
         </div>
-        <div class="main-card">
+        <div class="main-card" onclick="pondbirds()">
             <div><h2>Ponds and Lakes</h2></div>
             <div>
             <img src="images/Hawaiian_Duck.jpeg" alt="Ponds bird img" ></div>
@@ -93,5 +93,6 @@
     <script src="app.js"></script>
     <script src="forest.js"></script>
     <script src="backyard.js"></script>
+    <script src="ponds.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ function makeCard (birdObj){
     var str = "<div class='main-tile'>" ;
     str = str+"<div class='main-tile-col'><h2 class='main-tile-name'>" ;
     str = str+""+birdObj.name+"</h2>" ;
-    str = str+"<h4>CommonName : "+birdObj.commonName+"</h4></div>" ;
+    str = str+"<h4>Alternate Name : "+birdObj.commonName+"</h4></div>" ;
     str = str+"<div class='main-tile-col' ><div><img class='main-tile-img' src="+birdObj.image+" ></div>" ;
     str = str+`<div class='detailbutton' onclick=makeFocus(${newfcn}) >Details</div></div></div>`
     
