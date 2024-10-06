@@ -19,10 +19,12 @@ function seabirds () {
             console.log(str.length) ;
             if (str.length > 7){
                 bird={indval:inum, name:str[0],  commonName:str[1], scientific_name:str[2], 
-                endemic: str[3], habitat: str[5], concern: str[9], image:str[6], image1:str[7], image2:str[8] ,description:str[10]} ;
+                endemic: str[3], habitat: str[5], concern: str[9], image:str[6], image1:str[7], image2:str[8] ,description:str[10],
+                mylink:str[11]} ;
             }
             else 
-                continue ;    
+                continue ;   
+             
             
            
             myhtml = myhtml + makeCard(bird);
