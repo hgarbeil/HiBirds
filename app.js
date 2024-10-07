@@ -61,7 +61,7 @@ function makeFocus (indval){
     myhtml = myhtml + "</ul></div>" ;
     myhtml = myhtml + `<div class="main-focus-right"><div class="main-focus-tnails">
         <img src=${mybird.image} onclick="loadFull(0, ${indval})"><img src=${mybird.image1} onclick="loadFull(1,${indval})"><img src=${mybird.image2} onclick="loadFull(2, ${indval})"></div>
-        <div class="main-focus-big" ><img src=#${mybird.image} alt="mybird" id="bigBird"><div></div>` ;
+        <div class="main-focus-big" ><img src=${mybird.image} alt="mybird" id="bigBird"><div></div>` ;
 
     
     

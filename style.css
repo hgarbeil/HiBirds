@@ -7,6 +7,7 @@
     --color-twinflame : #c2552e ;
     --color-umber : #352c24 ;
     --color-pistachio : #f5f4c3 ;
+    --color-pistachio-light: rgba(255, 245, 140, 0.9) ;
 
 
     --color-white : #fff ;
@@ -319,8 +320,8 @@ li.detail-li {
 }
 
 .click-detail {
-    color : var(--color-wintergreen) ;
-    background-color: yellow;
+    color : var(--color-wintertergreen) ;
+    background-color: var(--color-pistachio-light);
     font-size: 1.4rem ;
     text-align : center ;
     margin-top: 3px ;
