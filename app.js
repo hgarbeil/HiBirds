@@ -54,6 +54,7 @@ function makeFocus (indval){
     myhtml = myhtml + `<li class="detail-li">Type : ${mybird.endemic}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Occurrence : ${mybird.habitat}</li>` ;
     myhtml = myhtml + `<li class="detail-li">Status : ${mybird.concern}</li>`;
+    myhtml = myhtml + `<li class="detail-li audio"><audio controls><source src="audio/shearwater.mp3" type="audio/mpeg"></audio></li>` ;
     if (mybird.mylink != null){
         myhtml = myhtml + `<li class="detail-li click-detail"><a href=${mybird.mylink} target="_blank" rel="noopener noreferrer">More Info</a></li>`;
 
