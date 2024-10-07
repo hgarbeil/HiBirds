@@ -318,13 +318,25 @@ li.detail-li {
     border-radius: 1px ;
 
 }
+li.detail-li:hover {
+    background-color: var(--color-pistachio);
+
+}
 
 .click-detail {
     color : var(--color-wintertergreen) ;
-    background-color: var(--color-pistachio-light);
-    font-size: 1.4rem ;
+    
     text-align : center ;
     margin-top: 3px ;
+}
+
+
+.click-detail a {
+    background-color: var(--color-pistachio-light);
+    font-size: 1.4rem ;
+    padding: 1.2rem ;
+    border-radius: 5px ;
+
 }
 @media screen and (min-width:700px) and (max-width:1060px){
     .main {
@@ -335,7 +347,7 @@ li.detail-li {
         margin-top: 0rem ;
     }
 
-    nav .topnav-list {
+    nav .topnav-list  {
         flex-direction: column;
         font-size: 1.2rem ;
         padding: 1px ;
