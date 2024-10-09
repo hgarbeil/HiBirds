@@ -336,15 +336,35 @@ li.detail-li:hover {
     font-size: 1.4rem ;
     padding: 1.1rem ;
     border-radius: 5px ;
-    margin-top: 5px ;
+    
 
+}
+
+.audioblock {
+    display : flex ;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    background-color: var(--color-pistachio) ;
+    border : 2px solid var(--color-wintergreen);
+    border-radius: var(--border-radius-1);
+    padding: 5px ;
 }
 
 .audio {
-    background-color: var(--color-wintergreen);
-    text-align: center;
+    /* background-color: var(--color-pi-light); */
+   
     
 }
+.audio:hover {
+    background-color : var(--color-wintergreen);
+
+}
+audio {
+    font-size: .6rem ;
+    border-radius: 15px ;
+    flex : 0 0 60% ;
+}
+
 @media screen and (min-width:700px) and (max-width:1060px){
     .main {
         grid-template-columns: 1fr 1fr ; 
