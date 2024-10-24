@@ -1,5 +1,12 @@
 const linkarr =["Homelink", "Backlink", "Forestlink", "PondLink"];
 let arrlist = [] ;
+const searchButton = document.getElementById("searchLink") ;
+const searchMenuEl = document.getElementById("search-menu") ;
+
+
+function searchMenu() {
+    searchMenuEl.classList.toggle ("active") ;
+}
 
 // This loads the image on the bird focus page 
 function loadFull (imNum, indval) {

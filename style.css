@@ -67,6 +67,45 @@ body {
     padding: 0 ;
     height: 100vh ;
     font-family: 'Poppins',sans-serif;
+    font-weight : 900 ;
+}
+
+.search-menu{
+    width:300px ;
+    height: 32rem ;
+    position: absolute ;
+    top: 153px ;
+    left : -300px ;
+    background-color: var(--color-wintergreen);
+    
+    border: 2px solid var(--color-pistachio);
+    border-top-right-radius : 8px ;
+    transition: 0.9s ease ;
+    padding: 10px 20px ;
+    font-size: 1.5rem ;
+    display:flex ;
+    flex-direction: column ;
+    gap: 2rem ;
+    
+}
+
+.search-menu * {
+    
+    
+    z-index: 999 ;
+
+}
+
+
+.search-menu.active {
+    left: 0px ;
+    transition: 0.9s ease ;
+}
+
+.search-menu button {
+    padding: 10px 20px ;
+    border-radius: 10px ;
+    background-color: yellow;
 }
 
 
@@ -84,6 +123,9 @@ body {
     margin-bottom:5px ;
 }
 
+.titleblock img {
+    border-radius: 10% ;
+}
 
 .titleblock .hamburger {
     display: none ; 
@@ -141,6 +183,17 @@ li:hover {
 
 li.active {
     background-color: var(--color-wintergreen-light);
+}
+
+#SearchLink {
+    background-color: var(--color-seafoam);
+}
+#SearchLink:hover {
+
+    background-color: var(--color-wintergreen-light);
+    color: var(--color-pistachio) ;
+    transition: all .5s ease-in-out;
+
 }
 
 .topmain {

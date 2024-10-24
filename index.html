@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="search-menu" class="search-menu">
+        <h3>
+            Search
+        </h3>
+        <h4>Select Locale : (ctrl or cmd for multiple)</h4>
+        <select name="Locales" id="sel_locales" multiple>
+            <option value="Backyard">Backyard</option>
+            <option value="Sea Bird">Sea Bird</option>
+            <option value="Forest">Forest</option>
+            <option value="Ponds and Lakes">Ponds and Lakes</option>
+        </select>
+        <button id="submitbutton" onclick="searchBirds()">Submit
+        </button>
+    </div>
     <div class="titleblock">
         <div class="title">
             <h1 class="title-head">Hawaii Birds</h1>
@@ -30,6 +44,7 @@
                 <li id="Forestlink" onclick="forestbirds()">Forest</li>
                 <li id="PondLink" onclick="pondbirds()">Ponds and Lakes</li>
                 <li id="SeabirdLink" onclick="seabirds()">Seabirds</li>
+                <li id="SearchLink" onclick="searchMenu()">Search</li>
             </ul>
         </nav>
         
@@ -95,5 +110,6 @@
     <script src="backyard.js"></script>
     <script src="ponds.js"></script>
     <script src="seabirds.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
